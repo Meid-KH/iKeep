@@ -3,7 +3,7 @@ import { Box, Heading, Flex, Avatar, IconButton } from "@chakra-ui/react";
 
 function Header() {
 	return (
-		<Box as="header" bg="teal.300" p={4} color="#fff">
+		<Box as="header" bg="main.200" p={4} mb="2rem" p="4" borderRadius="lg">
 			<Flex justify="space-between">
 				<Heading as="h1" size="lg">
 					iKeep
