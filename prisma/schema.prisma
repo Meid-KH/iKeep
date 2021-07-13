@@ -2,8 +2,8 @@
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 datasource db {
-  provider = "sqlite"
-  url      = "file:./dump.db"
+  provider = "mysql"
+  url      = "mysql://root:root@localhost:3306/ikeep"
 }
 
 generator client {
@@ -14,5 +14,5 @@ model Note {
   id        String @id @default(cuid())
   createdAt DateTime @default(now())
   title     String
-  content   String 
+  content   String
 }
