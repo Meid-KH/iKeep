@@ -3,7 +3,7 @@
 
 datasource db {
   provider = "mysql"
-  url      = "mysql://root:root@localhost:3306/ikeep"
+  url      = process.env(DATABASE_URL)
 }
 
 generator client {
